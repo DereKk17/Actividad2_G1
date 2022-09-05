@@ -35,20 +35,13 @@ public class Funciones {
     public Lista filtrarDatos(int mes, int i){
         Lista<Integer> listaFiltrada = new Lista<>();
 
-        if(i> datosClima.size())
+        if(i * mes > 112 * mes)
         {
 
         }
         else
         {
-            if(i == mes){
-                int a = i;
-                listaFiltrada.append((Integer) datosClima.buscarPorIndice(a));
-                listaFiltrada.append((Integer) datosClima.buscarPorIndice(a + 1));
-                listaFiltrada.append((Integer) datosClima.buscarPorIndice(a + 2));
-                listaFiltrada.append((Integer) datosClima.buscarPorIndice(a + 3));
-            }
-            filtrarDatos(mes,i + 4);
+           listaFiltrada.append((Integer) datosClima.buscarPorIndice(i));
         }
         return listaFiltrada;
     }
