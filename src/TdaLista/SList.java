@@ -74,7 +74,7 @@ public class SList<T> {
         }
     }
 
-    public int obtenerIndice(T dato){
+    public int obtenerIndiceDe(T dato){
         int i = 0;
         while(sLista[i] != null){
             if(sLista[i] == dato){

@@ -121,7 +121,7 @@ public class Lista<T> {
         return estado;
     }
 
-    public void appendEntre(T dato, T datoEnLista){
+    public void appendEntreDato(T dato, T datoEnLista){
         Nodo nuevo = new Nodo();
         nuevo.setDato(dato);
 
